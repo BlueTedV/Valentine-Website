@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Kenangan Untuk Kamu dan Dia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen Awal (opsional) -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Memuat kenangan...</div>
+    </div>
+
+    <!-- PIN Modal -->
+    <div id="pinModal">
+      <div class="pin-container">
+        <h2>🔐 Masukkan PIN</h2>
+        <p>PIN untuk membuka kenangan ini</p>
+        <div class="pin-input">
+          <input
+            type="password"
+            class="pin-digit"
+            maxlength="1"
+            data-index="0"
+            autofocus
+          />
+          <input
+            type="password"
+            class="pin-digit"
+            maxlength="1"
+            data-index="1"
+          />
+          <input
+            type="password"
+            class="pin-digit"
+            maxlength="1"
+            data-index="2"
+          />
+          <input
+            type="password"
+            class="pin-digit"
+            maxlength="1"
+            data-index="3"
+          />
+        </div>
+        <button class="pin-button" id="submitPin">Masuk</button>
+        <div class="pin-error" id="pinError"></div>
+      </div>
+    </div>
+
+    <!-- Bintang & Hati Latar -->
+    <div class="stars" id="stars"></div>
+    <div class="hearts">
+      <div class="heart">❤</div>
+      <div class="heart">💖</div>
+      <div class="heart">💗</div>
+      <div class="heart">💓</div>
+      <div class="heart">💕</div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="main-content" id="mainContent">
+      <header class="hero">
+        <div class="hero-inner">
+          <h1 class="hero-title">Website Kenangan</h1>
+          <h2 class="hero-subtitle">Untuk Kamu dan Dia.</h2>
+          <p class="hero-desc">
+            Tempat menyimpan cerita, foto, dan lagu favorit kalian berdua. Semua
+            momen spesial tersimpan di sini.
+          </p>
+          <a href="#playlist" class="btn-primary">Lihat Cerita Kita</a>
+        </div>
+        <div class="hero-glow"></div>
+      </header>
+
+      <section id="playlist">
+        <h2>🎵 Playlist Kita</h2>
+        <p>Lagu-lagu yang selalu mengingatkan kita</p>
+        <div class="playlist-container">
+          <div class="song-card">
+            <div class="song-art"></div>
+            <div class="song-title">Until I Found You</div>
+            <div class="song-artist">Stephen Sanchez</div>
+            <button class="play-song-btn">▶ Putar</button>
+          </div>
+          <div class="song-card">
+            <div class="song-art"></div>
+            <div class="song-title">Perfect</div>
+            <div class="song-artist">Ed Sheeran</div>
+            <button class="play-song-btn">▶ Putar</button>
+          </div>
+          <div class="song-card">
+            <div class="song-art"></div>
+            <div class="song-title">A Thousand Years</div>
+            <div class="song-artist">Christina Perri</div>
+            <button class="play-song-btn">▶ Putar</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="memories">
+        <h2>📸 Kenangan Kita</h2>
+        <p>Karena cinta bukan hanya kata, tapi momen yang kita ukir bersama</p>
+        <div class="memories-container">
+          <div class="memory-card">
+            <img
+              src="images/memory1.jpg"
+              alt="Kenangan 1"
+              class="memory-image"
+            />
+            <div class="memory-content">
+              <span class="memory-tag">Pertama Kali Bertemu</span>
+              <h3 class="memory-title">24 Januari 2023</h3>
+              <p class="memory-desc paragraph-delay" data-delay="0">
+                Kamu mengenakan jaket biru, dan senyummu mengubah hari itu
+                selamanya.
+              </p>
+              <div class="memory-meta">
+                <span class="meta-item">📍 Sekolah</span>
+                <span class="meta-item">🕒 Siang</span>
+              </div>
+            </div>
+          </div>
+          <div class="memory-card">
+            <img
+              src="images/memory2.jpg"
+              alt="Kenangan 2"
+              class="memory-image"
+            />
+            <div class="memory-content">
+              <span class="memory-tag">Trip ke Pantai</span>
+              <h3 class="memory-title">14 Februari 2024</h3>
+              <p class="memory-desc paragraph-delay" data-delay="1">
+                Kita berjalan di tepi pantai, tangan saling menggenggam, dan
+                dunia terasa berhenti.
+              </p>
+              <div class="memory-meta">
+                <span class="meta-item">📍 Anyer</span>
+                <span class="meta-item">🌅 Sore</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="distance-section">
+        <h2 class="distance-title">❤️❤️</h2>
+        <p class="distance-quote">
+          "Jarak bukan penghalang, karena hati kita selalu sejalan."
+        </p>
+        <div class="locations-container">
+          <div class="location-card">
+            <div class="location-icon">🏠</div>
+            <div class="location-text">Rumahku</div>
+          </div>
+          <div class="heart-divider">❤</div>
+          <div class="location-card">
+            <div class="location-icon">🏡</div>
+            <div class="location-text">Rumahmu</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="love-quote-section">
+        <div class="quote-inner">
+          <p class="quote-text">
+            "Placeholder: Kenangan kita adalah lagu yang tak pernah usai."
+          </p>
+          <p class="quote-author">— Untukmu</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Dibuat dengan cinta oleh <strong>Narendra Zahir Atha Zahran</strong> ❤
+          Untukmu yang selalu di hati
+        </p>
+        <p>Januari 2026 • Website Kenangan Pribadi</p>
+      </footer>
+    </div>
+
+    <!-- Audio Player Mini (opsional) -->
+    <div class="audio-player" id="audioPlayer" style="display: none">
+      <div class="audio-controls">
+        <button class="audio-btn" id="playPauseBtn">▶</button>
+      </div>
+      <div class="audio-progress">
+        <div class="audio-progress-fill" id="progressFill"></div>
+      </div>
+      <div class="audio-time" id="timeDisplay">0:00 / 0:00</div>
+    </div>
+
+    <!-- Background Audio (opsional, bisa dikosongkan) -->
+    <audio id="bgAudio" preload="none">
+      <!-- <source src="audio/love-song.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
